@@ -1,0 +1,111 @@
+/* scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+/* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #E5ECF6;
+    color: #013A63;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #C6D5EC;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #013A63;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #0077b6;
+}
+
+/* Main Content Styles */
+main {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+/* Section Styles */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* lists */
+ul {
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+}
+
+/* Portfolio Section Styles */
+.project-featured {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-left: 4px solid #C6D5EC;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.project-featured h3 {
+    margin-top: 0;
+}
+
+.project-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.project-list li {
+    margin-bottom: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+/*section styles */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #C6D5EC;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
