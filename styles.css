@@ -12,7 +12,7 @@ html {
 /* Body Styles */
 body {
     font-family: 'Roboto Mono', monospace;
-    background-color: #E5ECF6;
+    background-color: #D6EBF3;
     color: #013A63;
     line-height: 1.6;
 }
@@ -21,9 +21,8 @@ body {
 header {
     position: sticky;
     top: 0;
-    z-index: 1000;
     width: 100%;
-    background-color: #C6D5EC;
+    background-color: #B9D8E1;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -31,7 +30,7 @@ header {
     flex-wrap: wrap;
 }
 
-/* Navigation Styles */
+/* Navigation bar Styles */
 nav {
     display: flex;
     gap: 20px;
@@ -51,7 +50,7 @@ nav a:hover {
 main {
     padding: 3rem 2rem;
     max-width: 800px;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 4rem;
 }
 
@@ -70,13 +69,17 @@ li {
     margin-bottom: 0.75rem;
 }
 
+
+
 /* Portfolio Section Styles */
 .project-featured {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    border-left: 4px solid #C6D5EC;
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #B9D8E1;
+    padding: 2rem;
     border-radius: 8px;
+    margin-bottom: 2rem;
 }
 
 .project-featured h3 {
@@ -90,22 +93,109 @@ li {
 
 .project-list li {
     margin-bottom: 1rem;
-    background-color: #fff;
+    background-color: #B9D8E1;
     padding: 1rem;
     border-radius: 6px;
 }
 
 /*section styles */
 section {
+    scroll-margin-top: 100px;
     margin-bottom: 2rem;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #C6D5EC;
+    background-color: #B9D8E1;
     padding: 1rem;
     text-align: center;
     position: relative;
     bottom: 0;
     width: 100%;
 }
+
+.logo {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: #013A63;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #0077b6;
+}
+
+/* Project images */
+.project-image {
+    flex: 1 1 30%;
+    text-align: center;
+
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.full-width img {
+    width: 100%;
+}
+
+.caption {
+    font-size: 0.9em;
+    color: #013A63;
+    margin-top: 8px;
+}
+
+
+.padding {
+    padding: 1.3rem;
+}
+
+.project-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.scroll-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none;
+}
+
+.scroll-gallery::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
+}
+
+.scroll-gallery img {
+    height: 600px;
+    width: auto;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    border-radius: 10px;
+}
+
+.image-with-caption {
+    flex-shrink: 0;
+    text-align: center;
+    width: 600px;
+    scroll-snap-align: start;
+}
+
+.image-with-caption img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.mini-padding {
+    padding: 0.5rem;
+}
+
